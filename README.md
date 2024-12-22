@@ -22,8 +22,8 @@ t3rn facilitates building interoperable solutions in familiar smart contract lan
 [Learn more about Gateways and how to integrate with t3rn.](./gateway)
 
 ## Multi-chain execution platform - execute on Circuit
-Gateway Circuit shares the context of the overall Interoperable Transaction and passes it over to the Gateways. The context contains all of the necessary data base on the Parachains can decide whether to not proceed with the execution. 
-Gateway Circuit has an access to all of the ongoing Interoperable Transactions and before the execution is started the circuit checks if there is no two transactions changing the same account at the same time. 
+Gateway Circuit shares the context of the overall Interoperable Transaction and passes it over to the Gateways. The context contains all of the necessary data base on which the Parachains can decide whether to not proceed with the execution. 
+Gateway Circuit has access to all of the ongoing Interoperable Transactions and before the execution is started the circuit checks if there is no two transactions changing the same account at the same time. 
 
 [Work on the Circuit Prototype is currently in progress.](./pallets/circuit)
 
@@ -34,11 +34,11 @@ Gateway Circuit has an access to all of the ongoing Interoperable Transactions a
 
 Each successful compilation of Composable Smart Contracts is immediately available for the network to use. The on-chain contracts hosting can be compared with decentralised package manager created by the community of t3rn developers.
 
-All the newly created code for interoperable programming is automatically shared with other developers to reuse:
+All the newly created code for interoperable programming is automatically shared with other developers for reuse:
 •  projects can easily collaborate by sharing and re-using the business logic 
-•  developers can contribute code for free or expect remuneration per usage. This opens up a way for developers of earning money for writing the Open Source code.
+•  developers can contribute code for free or expect remuneration per usage. This opens up a way for developers to earn money for writing the Open Source code.
 
-Smart contracts can be written in familiar languages like !ink, Solidity, WebAssembly. Existent smart contracts can be uploaded as they are, no rewriting required. 
+Smart contracts can be written in familiar languages like !ink, Solidity, WebAssembly. Existent smart contracts can be uploaded as they are, with no rewriting required. 
 
 [Learn more about writing composable contracts in our SDK.](./client/packages/sdk)
 
@@ -47,17 +47,17 @@ Smart contracts can be written in familiar languages like !ink, Solidity, WebAss
 Creating safe solutions operating and synchronizing multiple blockchains comes with new challenges.
  
 ### Synchronisation
-Multiple blockchains means that accounts and the storage allocated by them is located on different chains. Without the overarching synchronisation mechanism there is no guarantee that the state of accounts won't change while the interoperable transaction is executed. t3rn offers the interoperable execution protocol performed by Circuit, which manages the multi-chain transactions.
+Multiple blockchains means that accounts and the storage allocated by them are located on different chains. Without the overarching synchronisation mechanism there is no guarantee that the state of accounts won't change while the interoperable transaction is executed. t3rn offers the interoperable execution protocol performed by Circuit, which manages the multi-chain transactions.
 
 ### Non-reversible
-Once a transaction is applied on a blockchain it's non-reversible, which constitutes a problem for transactions only considered useful if they succeed on multiple blockchains simultaneously. t3rn introduces multiple phases to execution of interoperable transactions and implements the safety mechanisms which are able to revert the execution on affected chains in case the overall interoperable transaction fails. 
+Once a transaction is applied on a blockchain it's non-reversible, which constitutes a problem for transactions only considered useful if they succeed on multiple blockchains simultaneously. t3rn introduces multiple phases to the execution of interoperable transactions and implements the safety mechanisms that can revert the execution on affected chains in case the overall interoperable transaction fails. 
 
 ### Complexity
 Designing interoperable solutions is complex and requires developers and users to operate on multiple blockchains, possibly creating multiple different accounts, acquiring multiple currencies, providing a way for different blockchains to communicate. t3rn brings that complexity down and offers services and packages that facilitate interoperable execution securely.
 
 
 ### Repository setup
-Follow the steps below if you're interested building and running the Circuit on your local machine:
+Follow the steps below if you're interested in building and running the Circuit on your local machine:
 
 ```bash
 git clone https://github.com/t3rn/t3rn
