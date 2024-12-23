@@ -23,7 +23,7 @@ t3rn facilitates building interoperable solutions in familiar smart contract lan
 
 ## Multi-chain execution platform - execute on Circuit
 Gateway Circuit shares the context of the overall Interoperable Transaction and passes it over to the Gateways. The context contains all of the necessary data base on the Parachains can decide whether to not proceed with the execution. 
-Gateway Circuit has an access to all of the ongoing Interoperable Transactions and before the execution is started the circuit checks if there is no two transactions changing the same account at the same time. 
+Gateway Circuit has access to all of the ongoing Interoperable Transactions and before the execution is started the circuit checks if there is no two transactions changing the same account at the same time. 
 
 [Work on the Circuit Prototype is currently in progress.](./pallets/circuit)
 
@@ -36,7 +36,7 @@ Each successful compilation of Composable Smart Contracts is immediately availab
 
 All the newly created code for interoperable programming is automatically shared with other developers to reuse:
 •  projects can easily collaborate by sharing and re-using the business logic 
-•  developers can contribute code for free or expect remuneration per usage. This opens up a way for developers of earning money for writing the Open Source code.
+•  developers can contribute code for free or expect remuneration per usage. This opens up a way for developers to earn money for writing the Open Source code.
 
 Smart contracts can be written in familiar languages like !ink, Solidity, WebAssembly. Existent smart contracts can be uploaded as they are, no rewriting required. 
 
@@ -57,7 +57,7 @@ Designing interoperable solutions is complex and requires developers and users t
 
 
 ### Repository setup
-Follow the steps below if you're interested building and running the Circuit on your local machine:
+Follow the steps below if you're interested in building and running the Circuit on your local machine:
 
 ```bash
 git clone https://github.com/t3rn/t3rn
